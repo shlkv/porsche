@@ -1,0 +1,185 @@
+<!-- 
+Цель: создать сайт о марке автомобилей porsche
+	+ Создаем шапку до стилизации кнопки;
+	+ Создаем кнопку. Первое знакомство с before after;
+	+ Создаем меню;
+	+ Верстаем вторую секцию. Анимируем смену картинок в ней;
+	+ Создаем 4ую секцию. Третью пропускаем;
+	+ Подводим итоги;
+	- Домашнее задание.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Porsche</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	 <header class="header">
+        <div class="header-content-container">
+            <div class="header-content">
+       	  		<div class="header-top-half"></div>
+                <div class="header-bottom-half"></div>
+                <h1 class="header-title">Porsche</h1>
+                <button class="header-btn">
+                    Окунуться в историю
+                </button>
+            </div>
+            <video src="video/189847_en_3000000.mp4" autoplay loop muted>
+                Видео не поддерживается вашим устройством
+            </video>
+        </div>
+    </header>
+     <nav class="navigation">
+        <div class="nav-items">
+            <a href="#" class="nav-item">
+                <img src="img/icons/nav-1.svg" alt="Иконка домик">
+            </a>
+            <a href="#history" class="nav-item">
+                <img src="img/icons/nav-2.svg" alt="Иконка часы">
+            </a>
+            <a href="#events" class="nav-item">
+                <img src="img/icons/nav-3.svg" alt="Иконка путь между двумя пунктами">
+            </a>
+            <a href="#models" class="nav-item">
+                <img src="img/icons/nav-4.svg" alt="Иконка корона">
+            </a>
+        </div>
+    </nav>
+    <main>
+    	<section class="history" id="history">
+	        <div class="history-container">
+	            <div class="history-left">
+	                <h2 class="history-title">История длиной в 90 лет</h2>
+	                <p class="history-text">К моменту выпуска первого автомобиля под своим именем Фердинанд Порше успел накопить немалый опыт. Основанное им 25 апреля 1931 года предприятие Dr. Ing. h.c. F. Porsche GmbH под его началом уже успело поработать над такими проектами, как 6-цилиндровый гоночный Auto Union и Volkswagen Käfer, ставший одним из самых продаваемых автомобилей в истории. В 1939 году был разработан первый автомобиль компании — Porsche 64, который стал прародителем всех будущих Porsche. Для постройки этого экземпляра Фердинанд Порше использовал многие компоненты от Volkswagen Käfer.
+	                </p>
+            	</div>
+	            <div class="history-right">
+					<div class="history-images">
+				                <img src="img/porshce1.png" alt="Фотография автомобиля порше ">
+				                <img src="img/porshce2.png" alt="Фотография автомобиля порше ">
+				                <img src="img/porshce3.png" alt="Фотография автомобиля порше ">
+				                <img src="img/porshce1.png" alt="Фотография автомобиля порше ">
+
+					   </div>
+	            </div>
+	        </div>
+	    </section>
+
+	    <section class="dates" id="events">
+	    	<h2 class="dates-title">
+	    		Ключевые этапы
+	    	</h2>
+	    	<div class="events">
+		    	<div class="dates-event">
+		    		<p  class="dates-years">1931—1948: </p>
+		    		<p class="dates-description">
+		    			От задумок к серийному производству
+		    		</p>
+		    	</div>
+		    	<div class="dates-event">
+		    		<p class="dates-years">
+		    			1948—1965: 
+		    		</p>
+		    		<p class="dates-description">
+		    			Первые шаги
+		    		</p>
+		    	</div>
+		    	<div class="dates-event">
+		    		<p class="dates-years">
+		    			1963—1976: 
+		    		</p>
+		    		<p class="dates-description">
+		    			Взлет 911-го и падение 914-го
+		    		</p>
+		    	</div>
+		    	<div class="dates-event">
+		    		<p class="dates-years">
+		    			1972—1981: 
+		    		</p>
+		    		<p class="dates-description">
+		    			Правление Эрнста Фюрманна
+		    		</p>
+		    	</div>
+		    	<div class="dates-event">
+		    		<p class="dates-years">
+		    			1981—1988: 
+		    		</p>
+		    		<p class="dates-description">
+		    			Вклад нового директора
+		    		</p>
+		    	</div>
+		    	<div class="dates-event">
+		    		<p class="dates-years">
+		    			1989—1998: 
+		    		</p>
+		    		<p class="dates-description">
+		    			Десятилетие перемен
+		    		</p>
+		    	</div>
+		    	<div class="dates-event">
+		    		<p class="dates-years">
+		    			1996 — наше время: 
+		    		</p>
+		    		<p class="dates-description">
+		    			Новые модели и растущий аппетит
+		    		</p>
+		    	</div>
+		    	<div class="dates-event">
+		    		<p class="dates-years">
+		    			1931—1948: 
+		    		</p>
+		    		<p class="dates-description">
+		    			От задумок к серийному производству
+		    		</p>
+		    	</div>
+	    	</div>
+	    </section>
+
+	    <section class="models" id="models">
+	        <div class="models-container">
+	            <h2 class="models-title"> Самые знаковые автомобили</h2>
+	            <ul class="models-list">
+	                <li class="model-item">
+	                	<div class="model-item-desc">
+	                        <h3>Porsche 365</h3>
+	                        <p>Первый серийный автомобиль Porsche.</p>
+	                    </div>
+	                    <img src="img/porsche365.png" alt="Фото порше 365">
+	                </li>
+	                <li class="model-item">
+	                	<div class="model-item-desc">
+	                        <h3>Porsche 911</h3>
+	                        <p>Более мощный, комфортабельный и современный преемник модели 356. Изначально назывался Porsche 901. Но у компании Peugeot были эксклюзивные права во Франции на имена машин, образованных тремя цифрами с нулём посередине. В итоге Porsche изменили название на 911.</p>
+	                    </div>
+	                    <img src="img/porsche911.png" alt="Фото порше 911">
+	                </li>
+	                <li class="model-item">
+	                	<div class="model-item-desc">
+	                        <h3>Porsche Carrera GT</h3>
+	                        <p>Автомобиль был некоторое время быстрейшим серийным автомобилем Северной Петли Нюрбургринга - 7 минут 28 секунд. Этот результат был побит суперкаром Pagani Zonda F..</p>
+	                    </div>
+
+	                    <img src="img/porshceCarrera.png" alt="Фото порше каррера">
+	                </li>
+	                <li class="model-item">
+	                	 <div class="model-item-desc">
+	                        <h3>Porsche Tycan</h3>
+	                        <p>Первый серийный электрокар от Порше.</p>
+	                    </div>
+	                    <img src="img/porshceTycan.png" alt="Фото порше тайкан">
+	                </li>
+	            </ul>
+	        </div>
+	    </section>
+    </main>
+    <footer>
+    	<p>
+    		Футер
+    	</p>
+    </footer>
+</body>
+</html>
